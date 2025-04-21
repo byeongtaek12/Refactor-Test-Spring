@@ -1,0 +1,23 @@
+spring:
+  application:
+    name: expert
+
+  datasource:
+    url: jdbc:mysql://localhost:3306/expert
+    username: root
+    password: dhqudxor
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+  jpa:
+    hibernate:
+      ddl-auto: create
+    properties:
+      hibernate:
+        show_sql: true
+        format_sql: true
+        use_sql_comments: true
+        dialect: org.hibernate.dialect.MySQLDialect
+
+jwt:
+  secret:
+    key: "fdc01a39f58272198288180efe767c017f7498af6a3ef9b60caf6565f801776b0dd6fc15699eae44066322be97ec278cb12532b9b6fee91a0666db1ed29ee0a0"
